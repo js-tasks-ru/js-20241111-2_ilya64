@@ -7,6 +7,14 @@
 
 <button id="btn1">Show simple message!</button>
 
+<!-- Без этих импортов не работает -->
+<script type="importmap">
+  { "imports": {
+      "vue":        "https://cdnjs.cloudflare.com/ajax/libs/vue/3.2.41/vue.esm-browser.prod.js",
+      "vue-router": "https://cdnjs.cloudflare.com/ajax/libs/vue-router/4.1.5/vue-router.esm-browser.min.js"
+  } }
+</script>
+
 <script type="module">
   import NotificationMessage from './index.js';
 
